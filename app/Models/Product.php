@@ -13,7 +13,13 @@ class Product extends Model
         'nama',
         'harga',
         'deskripsi',
-        'foto'
+        'foto',
+        'user_id',
     ];
+
+    public function products()
+    {
+        return $this->hasMany(Product::class);
+    }
 
 }

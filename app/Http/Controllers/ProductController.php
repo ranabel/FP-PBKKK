@@ -31,11 +31,14 @@ class ProductController extends Controller
         $foto = $request->file('foto');
         $foto->storeAs('public', $foto->hashName());
 
+        $userId = $request->user()->id;
+
         Product::create([
             'nama' => $request->nama,
             'harga' => str_replace(".","",$request->harga),
             'deskripsi' => $request->deskripsi,
-            'foto' => $foto->hashName()
+            'foto' => $foto->hashName(),
+            'user_id' => $userId,
         ]);
 
         return redirect()->route('products.index')->with('success', 'Add Product Success');

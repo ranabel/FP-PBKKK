@@ -17,6 +17,7 @@ return new class extends Migration
             $table->integer('harga');
             $table->string('deskripsi')->nullable();
             $table->string('foto')->default('noimage.png');
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }
