@@ -1,6 +1,7 @@
 # PBKK
 
-**Final Project Kelompok 7 PBKK D: Toko Online**
+**Final Project Kelompok 7 PBKK D: Toko Online** <br>
+berikut link demo kami https://youtu.be/nU4jl040rDs
 
 | Nama                      | NRP           |
 |---------------------------|---------------|
